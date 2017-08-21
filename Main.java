@@ -11,14 +11,14 @@ import net.dv8tion.jda.core.exceptions.RateLimitedException;
 public class Main
 {
   public static JDA jda;
-  public static final String BOT_Token = "MzA5NDU4ODI3MDkzMzQ0MjY2.DEp6bw.UnoFUdY5g8ST0Za2ipk3P8-EhdE";
+  public static final String BOT_Token = "LEL";
   
   public Main() {}
   
   public static void main(String[] args)
     throws LoginException, IllegalArgumentException, InterruptedException, RateLimitedException
   {
-    jda = new JDABuilder(AccountType.BOT).addEventListener(new Object[] { new myEventListener() }).setToken("MzA5NDU4ODI3MDkzMzQ0MjY2.DEp6bw.UnoFUdY5g8ST0Za2ipk3P8-EhdE").buildBlocking();
+    jda = new JDABuilder(AccountType.BOT).addEventListener(new Object[] { new myEventListener() }).setToken("LEL").buildBlocking();
     Rifts rifts = new Rifts();
   }
 }
